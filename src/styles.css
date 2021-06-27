@@ -9,9 +9,42 @@ body {
   transition: background 0.2s ease;
 }
 
+.forth {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.state {
+  border-top: 1px solid #fff3;
+  padding: 0px 6px 20px;
+  right: 0;
+  font-size: 14px;
+  font-family: Iosevka SS11;
+  color: #fffc;
+}
+
+.state > div {
+  display: flex;
+}
+
+.state > div div {
+  margin-right: 2em;
+}
+
+.state h3 {
+  vertical-align: baseline;
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline;
+  opacity: 0.6;
+}
+
 #repl {
   background: none;
   color: #fffc;
+  width: 100%;
 }
 
 .replInput {
