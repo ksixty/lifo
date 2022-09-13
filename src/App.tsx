@@ -134,20 +134,16 @@ export default function App() {
     const wordCode = state.data.stack[state.wp];
     const word = dict.words[wordCode];
     if (typeof word === "undefined") {
-      console.log("stacklevel done");
       exit();
       // state.error = "? memory error";
       return;
     } else {
-      console.log("calling", word.name);
       word.fn();
     }
   };
   const exit = () => {
     const nextAddress = state.ret.pop();
-    console.log(state.ret.stack.length);
     if (state.ret.stack.length == 0) {
-      console.log("shiiit");
       return; // idk why this works
     }
     if (typeof nextAddress !== "undefined") {
@@ -159,7 +155,6 @@ export default function App() {
   };
   const docol = (address: number) => {
     state.ret.push(address);
-    console.log(state.ret.stack.length);
     state.wp = address;
     console.log("doing word at", address, "stack", state.ret.stack);
     next();
