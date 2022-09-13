@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Iosevka, Cascadia Mono, monospace;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
   padding: 0px 6px 20px;
   right: 0;
   font-size: 14px;
-  font-family: Iosevka SS11;
   color: #fffc;
 }
 
@@ -60,7 +60,6 @@ body {
 #repl * {
   color: #fffc;
   font-size: 24px;
-  font-family: Iosevka SS11;
 }
 
 .historyItem {
